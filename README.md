@@ -1,12 +1,10 @@
-# Enterprise Network Foundation & pfSense Deployment
-
-## Objective
-To design a segmented virtual network and deploy a pfSense edge firewall. Instead of relying on the default configuration, I implemented strict egress filtering, utilizing a default-deny posture to only allow explicitly authorized traffic out of the LAN.
+# Cybersecurity Homelab
+Welcome to my cybersecurity homelab. This repository documents my hands-on experience building, configuring, and securing a virtualized network environment to practice enterprise-grade security principles.
 
 ## Network Topology
 The environment is divided into an isolated internal LAN and a WAN bridging to the internet, managed by the pfSense firewall. 
 
-![Virtual Network Topology](Virtual%20Network%20Topology.png)
+![Virtual Network Topology](
 
 ## Egress Filtering (Zero Trust Posture)
 Out-of-the-box, pfSense contains a "Default Allow All" rule for the LAN. In a corporate environment, this is a major security risk. I disabled this default rule to enforce a **Default Deny** posture. 
@@ -16,7 +14,7 @@ I then created explicit "Allow" rules strictly for essential operational traffic
 * **Port 80 (TCP):** HTTP Web Traffic
 * **Port 443 (TCP):** HTTPS Secure Web Traffic
 
-![Firewall Rules](Screenshot_20260425_131644.png)
+![Firewall Rules](Screenshot_20260425_143318.png)
 
 ## Validation & Testing
 To verify the firewall rules are functioning correctly, I tested outbound connectivity from the Ubuntu LAN client. 
