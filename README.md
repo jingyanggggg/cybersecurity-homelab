@@ -7,7 +7,7 @@ To architect a segmented virtual network and deploy a pfSense edge firewall. Ins
 ## Network Topology
 The environment is divided into an isolated internal LAN and a WAN bridging to the internet, managed by the pfSense firewall. 
 
-![Virtual Network Topology](Virtual Network Topology.png)
+![Virtual Network Topology](Virtual%20Network%20Topology.png)
 
 ## Egress Filtering (Zero Trust Posture)
 Out-of-the-box, pfSense contains a "Default Allow All" rule for the LAN. In a corporate environment, this is a major security risk. I disabled this default rule to enforce a **Default Deny** posture. 
