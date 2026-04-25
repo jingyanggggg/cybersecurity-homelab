@@ -1,7 +1,7 @@
 # Cybersecurity Homelab
 Welcome to my cybersecurity homelab. This repository documents my hands-on experience building, configuring, and securing a virtualized network environment to practice enterprise-grade security principles.
 
-## 🎯 Objective
+## Objective
 To architect a segmented virtual network and deploy a pfSense edge firewall. Instead of relying on the default configuration, I implemented strict egress filtering, utilizing a default-deny posture to only allow explicitly authorized traffic out of the LAN.
 
 ## Network Topology
