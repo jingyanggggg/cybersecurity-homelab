@@ -4,7 +4,7 @@ Welcome to my cybersecurity homelab. This repository documents my hands-on exper
 ## Network Topology
 The environment is divided into an isolated internal LAN and a WAN bridging to the internet, managed by the pfSense firewall. 
 
-![Virtual Network Topology](
+![Virtual Network Topology](Virtual Network Topology.png)
 
 ## Egress Filtering (Zero Trust Posture)
 Out-of-the-box, pfSense contains a "Default Allow All" rule for the LAN. In a corporate environment, this is a major security risk. I disabled this default rule to enforce a **Default Deny** posture. 
