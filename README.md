@@ -8,7 +8,7 @@ The environment is divided into an isolated internal LAN and a WAN bridging to t
 ![Virtual etwork Topology](virtual-network-topology.png)
 
 ## Egress Filtering (Zero Trust Posture)
-Out-of-the-box, pfSense contains a "Default Allow All" rule for the LAN. In a corporate environment, this is a major security risk. I disabled this default rule to enforce a **Default Deny** posture. 
+By default, pfSense contains a "Default Allow All" rule for the LAN. In a corporate environment, this is a major security risk. I disabled this default rule to enforce a **Default Deny** posture. 
 
 I then created explicit "Allow" rules strictly for essential operational traffic:
 * **Port 53 (UDP):** DNS Resolution
